@@ -13,8 +13,6 @@ import Footer from './components/Footer/Footer';
 import Login from './components/Login/Login';
 import Signup from './components/Signup/Signup';
 import Demo from './components/Demo/Demo';
-import { Route, Routes } from 'react-router-dom';
-import ErrorFound from './components/ErrorFound/ErrorFound';
 
 function App() {
 
@@ -74,10 +72,6 @@ function App() {
         <Subscribe/>
         <Footer/>
       </Contexts.Provider>
-
-      <Routes>
-        <Route path='/*' element={<ErrorFound/>} />
-      </Routes>
 
       <div className={backToTop} onClick={scrollToTop}>
         <i class="fa-solid fa-angles-up fa-shake"></i>
