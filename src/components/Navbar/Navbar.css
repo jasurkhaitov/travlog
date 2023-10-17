@@ -1,0 +1,145 @@
+.nav {
+    padding: 25px 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(20, 34, 87, 1);
+    z-index: 11111;
+}
+
+.nav .bars {
+    display: none;
+}
+
+.nav .logo {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 16px;
+}
+
+.nav .logo p {
+    color: white;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 40px;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul li {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 120%;
+    padding: 5px;
+}
+
+.nav ul li:hover {
+    color: crimson;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.nav .registerBtn {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 16px;
+}
+
+.nav .registerBtn a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.nav .registerBtn button {
+    padding: 16px 32px;
+    border: none;
+    border-radius: 100px;
+    background-color: var(--Primary, #eee);
+    color: var(--Light, #5D50C6);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+@media(max-width: 992px) {
+    .nav .bars {
+        margin-left: 15px;
+        width: 45px;
+        height: 45px;
+        background-color: white;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav .bars i {
+        font-size: 25px;
+        color: rgba(93, 80, 198, 1);
+    }
+}
+
+@media(max-width: 700px) {
+    .nav {
+        padding: 15px;
+    }
+
+    .nav .bars {
+        margin: 0;
+        width: 35px;
+        height: 35px;
+        border-radius: 10px;
+    }
+
+    .nav .bars i {
+        font-size: 22px;
+    }
+
+    .nav .logo {
+        gap: 10px;
+    }
+
+    .nav .logo svg {
+        width: 35px;
+        height: 36px;
+    }
+
+    .nav .logo p {
+        font-size: 20px;
+        line-height: 36px;
+    }
+}
+
+@media(max-width: 400px) {
+    .nav .bars {
+        width: 30px;
+        height: 30px;
+    }
+
+    .nav .bars i {
+        font-size: 20px;
+    }
+
+    .nav .logo {
+        gap: 5px;
+    }
+
+    .nav .logo svg {
+        width: 30px;
+        height: 31px;
+    }
+
+    .nav .logo p {
+        font-size: 19px;
+        line-height: 35px;
+    }
+}

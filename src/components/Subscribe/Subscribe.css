@@ -1,0 +1,164 @@
+section.subscribe {
+    padding-bottom: 100px;
+    padding-top: 130px;
+}
+
+section.subscribe .formCard {
+    padding: 60px 120px;
+    border-radius: 32px;
+    text-align: center;
+    background: rgba(250, 205, 73, 0.2);
+}
+
+section.subscribe .formCard h2.title {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+section.subscribe .formCard form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+section.subscribe .formCard form input {
+    width: 60%;
+    padding: 25px 30px;
+    border-radius: 32px;
+    border: none;
+    background: var(--white, #FFF);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+section.subscribe .formCard form input::placeholder {
+    color: var(--grey-scale-black-75, rgba(25, 24, 37, 0.75));
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+section.subscribe .formCard form input:focus {
+    outline: none;
+}
+
+section.subscribe .formCard form button {
+    border-radius: 32px;
+    background: var(--Primary, #5D50C6);
+    width: 20%;
+    padding: 23px;
+    border: none;
+    color: var(--white, #FFF);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+@media(max-width:1200px) {
+    section.subscribe .formCard h2.title {
+        width: 100%;
+    }
+
+    section.subscribe .formCard form input {
+        padding: 20px 30px;
+    }
+
+    section.subscribe .formCard form button {
+        padding: 17px;
+    }
+}
+
+@media(max-width: 992px) { 
+    section.subscribe .formCard p.red {
+        color: var(--Secondary, #F85E9F);
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 4.6px;
+        text-transform: uppercase;
+    }
+
+    section.subscribe .formCard h2.title {
+        width: 100%;
+        font-size: 40px;
+        margin: 15px 0px;
+    }
+
+    section.subscribe .formCard {
+        padding: 60px;
+    }
+
+}
+
+@media(max-width: 768px) {
+    section.subscribe {
+        padding-bottom: 50px;
+    }
+    section.subscribe .formCard {
+        padding: 60px 30px;
+    }
+
+    section.subscribe .formCard p.red {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 2.6px;            
+    }
+
+    section.subscribe .formCard h2.title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    section.subscribe .formCard form input {
+        padding: 19px 30px;
+    }
+
+    section.subscribe .formCard form button {
+        width: 30%;
+        padding: 15px;
+    }
+}
+
+@media(max-width: 576px) {
+    section.subscribe .formCard {
+        padding: 30px;
+    }
+
+    section.subscribe .formCard p.red {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 3px;
+    }
+
+    section.subscribe .formCard h2.title {
+        font-size: 23px;
+        line-height: 31px;
+        margin: 10px 0px;
+    }
+
+    section.subscribe .formCard form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section.subscribe .formCard form input {
+        width: 100%;
+        font-size: 14px;
+        line-height: 16px;  
+    }
+
+    section.subscribe .formCard form input::placeholder {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    section.subscribe .formCard form button {
+        width: 100%;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}

@@ -1,0 +1,135 @@
+main .categories {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+    margin-top: 50px;
+}
+
+main .categories .categoryBox {
+    display: flex;
+    padding: 64px;
+    flex-direction: column;
+    align-items: center; 
+    border-radius: 32px;
+    transition: 1s;
+    border: 1px solid rgba(25, 24, 37, 0.10);
+}
+
+main .categories .categoryBox:hover {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.10), 0px 41px 89px 0px rgba(0, 0, 0, 0.10);
+    transition: .5s;
+    transform: translateY(-10px);
+}
+
+main .categories .categoryBox h3 {
+    margin-top: 30px;
+    color: var(--grey-scale-black, #191825);
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+main .categories .categoryBox p.text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media(max-width: 1110px)  {
+    .col-1110-6 {
+        width: calc(100% / 12 * 6);
+    }
+
+    main .categories .categoryBox {
+        padding: 40px;
+    }
+}
+
+@media(max-width: 992px) {
+    .col-lg-9 {
+        width: calc(100% / 12 * 9);
+        margin: auto;
+    }
+
+    main .categories .categoryBox {
+        padding: 37px;
+    }
+
+    main .categories .categoryBox h3 {
+        margin-top: 20px;
+    }
+
+    main .categories .categoryBox p.text {
+        margin-top: 10px;
+    }
+}
+
+@media(max-width: 992px) {
+    main {
+        padding: 50px 0px;
+    }
+
+    main .categories .categoryBox {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+@media(max-width: 950px) {
+    main .categories {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        margin-top: 25px;
+    }
+}
+
+@media(max-width: 450px) {
+    .col-xsx-12 {
+        width: calc(100% / 12 * 12);
+    }
+
+    main {
+        padding: 30px 0px;
+    }
+
+    main .categories {
+        width: 100%;
+    }
+
+    main .categories .categoryBox {
+        padding: 25px;
+    }
+
+    p.red {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 120%; /* 19.2px */
+        letter-spacing: 3.2px;
+    }
+
+    h2.title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 120%;
+    }
+
+    main .categories .categoryBox h3 {
+        color: var(--grey-scale-black, #191825);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 120%;
+    }
+
+    main .categories .categoryBox p.text {
+        color: var(--grey-scale-black-50, rgba(25, 24, 37, 0.50));
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 160%; /* 28.8px */
+    }
+
+}

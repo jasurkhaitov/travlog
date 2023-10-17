@@ -1,0 +1,133 @@
+section.features {
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+section.features img {
+    width: 100%;
+}
+
+section.features h2.title {
+    margin: 16px 0px;
+}
+
+section.features .keyBox {
+    margin-top: 50px;
+}
+
+section.features .keyBox .box {
+    border-radius: 32px;
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+section.features .keyBox .box:hover {
+    border: 1px solid var(--grey-scale-black-10, rgba(25, 24, 37, 0.10));
+}
+
+section.features .keyBox .box .logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 32px;
+    background-color: #FF5722;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.features .keyBox .box:nth-of-type(2) .logo {
+    background-color: #FACD49;
+}
+
+section.features .keyBox .box:nth-of-type(3) .logo {
+    background-color: #F85E9F   ;
+}
+
+section.features .keyBox .box .keyText h3 {
+    font-size: 23px;
+    line-height: 28px;
+    margin-bottom: 8px;
+}
+
+@media(max-width: 1200px) {
+    section.features h2.title {
+        margin: 0px;
+    }
+
+    .featurefdc {
+        flex-direction: column-reverse;
+    }
+
+    section.features .keyBox {
+        width: 70%;
+        margin: auto;
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 992px) {
+    section.features .keyBox {
+        width: 100%;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    section.features .keyBox .box {
+        padding: 25px;
+    }
+}
+
+@media(max-width: 650px) {
+    section.features {
+        padding-bottom: 50px;
+    }
+
+    section.features .keyBox {
+        width: 100%;
+    }
+
+    section.features .keyBox .box {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+        padding: 25px;
+    }
+
+    section.features .keyBox .box .keyText {
+        text-align: left;
+    }
+
+}
+
+@media(max-width: 576px) {
+    .colf-12 {
+        width: calc(100% / 12 * 12);
+    }
+
+    section.features .keyBox .box .logo {
+        width: 70px;
+        height: 70px;
+        border-radius: 20px;
+    }
+
+    section.features p.red {
+        margin-top: 20px;
+    }
+
+    section.features .keyBox {
+        margin-top: 10px;
+    }
+
+    section.features .keyBox .box .keyText h3 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    section.features .keyBox .box .keyText p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
