@@ -301,15 +301,15 @@ i.fa-angles-up {
 
 @media(max-width: 700px) {
     .backToTop {
-        width: 43px;
-        height: 43px;
+        width: 100px;
+        height: 100px;
         bottom: -100px;
         right: 20px;
     }
 
     .backToTopTwo {
-        width: 43px;
-        height: 43px;
+        width: 100px;
+        height: 100px;
         bottom: 60px;
         right: 20px;
     }
