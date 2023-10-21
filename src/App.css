@@ -301,17 +301,17 @@ i.fa-angles-up {
 
 @media(max-width: 700px) {
     .backToTop {
-        width: 100px;
-        height: 100px;
+        width: 60px;
+        height: 60px;
         bottom: -100px;
-        right: 20px;
+        right: 30px;
     }
 
     .backToTopTwo {
-        width: 100px;
-        height: 100px;
+        width: 60px;
+        height: 60px;
         bottom: 60px;
-        right: 20px;
+        right: 30px;
     }
 
     i.fa-angles-up {
