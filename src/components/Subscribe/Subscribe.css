@@ -177,7 +177,7 @@ section.subscribe .formCard form button:active {
         width: 100%;
         font-size: 18px;
         line-height: 16px;  
-        padding: 20px;
+        padding: 15px;
     }
 
     section.subscribe .formCard form input::placeholder {
@@ -186,7 +186,7 @@ section.subscribe .formCard form button:active {
     }
 
     section.subscribe .formCard form button {
-        padding: 20px;
+        padding: 15px;
         width: 100%;
         font-size: 18px;
         line-height: 16px;
