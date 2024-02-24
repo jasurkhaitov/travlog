@@ -61,12 +61,11 @@ export default function Modal() {
                         navMenu?.map((element, value) => <li key={element.value} onClick={() => handleClickMenu(element)} >{element}</li>)
                     }
                 </ul>
-            </div>
 
-            <div className="btn">
-                <button onClick={() => setSignup(true)}>Sign Up</button>
+                <div className="btn">
+                    <button onClick={() => setSignup(true)}>Sign Up</button>
+                </div>
             </div>
-
         </div>
     </div>
   )
