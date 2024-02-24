@@ -11,7 +11,7 @@
     display: none;
 }
 
-.nav .logo {
+.nav .logo a {
     display: flex;
     align-items: center;
     justify-content: start;
@@ -68,6 +68,10 @@
     font-size: 14px;
     font-weight: 700;
     line-height: 120%;
+}
+
+.nav .registerBtn button:active {
+    transform: scale(0.85);
 }
 
 @media(max-width: 992px) {

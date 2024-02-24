@@ -24,14 +24,15 @@ section.subscribe .formCard form {
 }
 
 section.subscribe .formCard form input {
-    width: 60%;
+    width: 50%;
     padding: 25px 30px;
     border-radius: 32px;
     border: none;
     background: var(--white, #FFF);
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 21px;
+    box-shadow: 2px 2px 5px rgb(183, 181, 181);
 }
 
 section.subscribe .formCard form input::placeholder {
@@ -55,6 +56,11 @@ section.subscribe .formCard form button {
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
+    box-shadow: 2px 2px 5px rgb(183, 181, 181);
+}
+
+section.subscribe .formCard form button:active {
+    transform: scale(0.90);
 }
 
 @media(max-width:1200px) {
@@ -64,10 +70,14 @@ section.subscribe .formCard form button {
 
     section.subscribe .formCard form input {
         padding: 20px 30px;
+        border-radius: 10px;
+        width: 50%;
     }
 
     section.subscribe .formCard form button {
         padding: 17px;
+        width: 150px;
+        border-radius: 10px;
     }
 }
 
@@ -91,6 +101,17 @@ section.subscribe .formCard form button {
         padding: 60px;
     }
 
+    section.subscribe .formCard form input {
+        padding: 15px 25px;
+        border-radius: 10px;
+        width: 50%;
+    }
+
+    section.subscribe .formCard form button {
+        padding: 13px;
+        width: 125px;
+        border-radius: 10px;
+    }
 }
 
 @media(max-width: 768px) {
@@ -112,18 +133,25 @@ section.subscribe .formCard form button {
         font-size: 32px;
         line-height: 40px;
     }
+}
 
+@media(max-width: 700px) {
     section.subscribe .formCard form input {
-        padding: 19px 30px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        width: 50%;
+        order: -1;
     }
 
     section.subscribe .formCard form button {
-        width: 30%;
-        padding: 15px;
+        padding: 10px;
+        width: 100px;
+        border-radius: 10px;
+        font-size: 17px;
     }
 }
 
-@media(max-width: 576px) {
+@media(max-width: 600px) {
     section.subscribe .formCard {
         padding: 30px;
     }

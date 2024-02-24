@@ -13,11 +13,10 @@ header img {
 
 header .explore {
     width: 220px;
+    cursor: crosshair;
     padding: 16px 32px;
     border-radius: 100px;
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.07), 0px 34px 75px 0px rgba(0, 0, 0, 0.07), 
-    0px 137px 137px 0px rgba(0, 0, 0, 0.06), 0px 308px 185px 0px rgba(0, 0, 0, 0.04), 
-    0px 548px 219px 0px rgba(0, 0, 0, 0.01), 0px 856px 240px 0px rgba(0, 0, 0, 0.00);
+    box-shadow: 1px 1px 10px rgb(203, 202, 202);
     align-items: center;
     justify-content: space-between;
     display: flex;
@@ -28,7 +27,7 @@ header .explore span {
     color: var(--Secondary, #F85E9F);
     font-size: 14px;
     font-weight: 700;
-    line-height: 120%; /* 16.8px */
+    line-height: 120%; /* 16.8px */;
 }
 
 header h1 {
@@ -81,7 +80,13 @@ header .btn button:last-of-type {
     gap: 8px;
     background-color: white;
     border: 1px solid var(--Light, #EEE);
+    box-shadow: 1px 1px 10px rgb(203, 202, 202);
 }
+
+header .btn button:active {
+    transform: scale(0.90);
+}
+
 header ul {
     display: grid;
     grid-template-columns: repeat(5, auto);

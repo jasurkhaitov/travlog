@@ -8,7 +8,7 @@ export const testimonialMenu = [
         comment: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC."
     },
     {
-        image: 'https://dzz-zapad.hr/assets/frontend/pages/img/people/img2-large.jpg',
+        image: 'https://avatars.mds.yandex.net/i?id=6683c41813a83338d3020ea9684ed7d1-5232106-images-thumbs&n=13',
         name : 'Wade Smith',
         job: '/Taxi Driver',
         comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis tempore excepturi atque vel quasi dignissimos nostrum quos possimus"

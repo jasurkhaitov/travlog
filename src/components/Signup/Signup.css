@@ -105,9 +105,15 @@
     cursor: pointer;
 }
 
+.modal-sign .sign-content form .btnSign {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
 .modal-sign .sign-content form button {
     margin-top: 10px;
-    width: 100%;
+    width: 150px;
     color: var(--white, #FFF);
     font-size: 14px;
     font-weight: 700;
@@ -117,6 +123,10 @@
     background-color: rgb(46, 46, 240);
     border: none;
     margin-bottom: 10px;
+}
+
+.modal-sign .sign-content form button:active {
+    transform: scale(0.95);
 }
 
 .modal-sign .sign-content form p span {

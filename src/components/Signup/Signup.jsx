@@ -4,7 +4,7 @@ import './Signup.css'
 
 export default function Signup() {
 
-    const {eye, setEye, type, setType, contype, consetType, coneye, consetEye, setSignup, setMdl, setLogin} = useContext(Contexts)
+    const {eye, setEye, type, setType, contype, consetType, coneye, consetEye, setSignup, setMdl} = useContext(Contexts)
 
     const handleChangeInput = () => {
         eye === 'fa-solid fa-eye' ? setEye('fa-solid fa-eye-slash') : setEye('fa-solid fa-eye')
@@ -19,15 +19,40 @@ export default function Signup() {
     const handleCloseSignup = () => {
         setSignup(false)
         setMdl(false)
+        setType('password')
+        consetType('password')
+        setEye('fa-solid fa-eye-slash')
+            consetEye('fa-solid fa-eye-slash')
     }
 
-    const handleMoveLogin = () => {
-        setLogin(true)
-        setSignup(false)
+    const handleModal = (event) => {
+        if(event.target.className === 'modal-sign') {
+            setSignup(false)
+            setMdl(false)
+            setType('password')
+            consetType('password')
+            setEye('fa-solid fa-eye-slash')
+            consetEye('fa-solid fa-eye-slash')
+        }
+    }
+    
+    document.addEventListener('keydown', (event) => {
+        if(event.code == 'Escape') {
+            setSignup(false)
+            setMdl(false)
+            setType('password')
+            consetType('password')
+            setEye('fa-solid fa-eye-slash')
+            consetEye('fa-solid fa-eye-slash')
+        }
+    })
+
+    const handleSignup = (event) => {
+        event.preventDefault()
     }
 
   return (
-    <div className="modal-sign">
+    <div className="modal-sign" onClick={handleModal}>
         <div className="sign-content">
 
             <div className="modal-top">
@@ -37,7 +62,7 @@ export default function Signup() {
 
             <p>Registration takes less than a minute but gives you full control over your studying.</p>
 
-            <form action="#!">
+            <form onSubmit={handleSignup}>
                 <label htmlFor="email">
                     Full Name
                     <input type="text" id="email" placeholder='Your full name' />
@@ -60,9 +85,10 @@ export default function Signup() {
                     <i class={coneye} onClick={handleConfirmChangeInput}></i>
                 </label>
 
-                <button>Sign up</button>
-
-                <p>Don't have an account? <span onClick={handleMoveLogin}>Log in</span> </p>
+                <div className='btnSign'>
+                    <button type='submit'>Sign up</button>
+                    <button type='reset'>Reset</button>
+                </div>
             </form>
 
             <p>Or sign in with</p>

@@ -10,7 +10,6 @@ import Feature from './components/Features/Feature';
 import Testimonials from './components/Testimonial/Testimonials';
 import Subscribe from './components/Subscribe/Subscribe';
 import Footer from './components/Footer/Footer';
-import Login from './components/Login/Login';
 import Signup from './components/Signup/Signup';
 import Demo from './components/Demo/Demo';
 
@@ -54,9 +53,6 @@ function App() {
         <Navbar/>
         {
           mdl && <Modal/>
-        }
-        {
-          login && <Login/>
         }
         {
           signup && <Signup/>
