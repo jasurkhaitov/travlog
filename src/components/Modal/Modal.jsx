@@ -5,7 +5,7 @@ import './Modal.css'
 
 export default function Modal() {
 
-    const {setActiveMenu, setMdl, setLogin, setSignup} = useContext(Contexts)
+    const {setActiveMenu, setMdl, setSignup} = useContext(Contexts)
 
     const handleClickMenu = (element) => {
         setActiveMenu(element)
@@ -30,6 +30,12 @@ export default function Modal() {
             document.body.style.overflow = ''
         }
     })
+
+    const openForm = () => {
+        document.body.style.overflow = 'hidden'
+        setSignup(true)
+        setMdl(false)
+    }
 
   return (
     <div onClick={handleClose} className="modal" id='asideNav'>
@@ -63,7 +69,7 @@ export default function Modal() {
                 </ul>
 
                 <div className="btn">
-                    <button onClick={() => setSignup(true)}>Sign Up</button>
+                    <button onClick={openForm}>Sign Up</button>
                 </div>
             </div>
         </div>

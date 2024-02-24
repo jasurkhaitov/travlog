@@ -16,34 +16,29 @@ export default function Signup() {
         contype === 'password'? consetType('text') : consetType('password')
     }   
 
-    const handleCloseSignup = () => {
+    function closeForm() {
         setSignup(false)
         setMdl(false)
         setType('password')
         consetType('password')
         setEye('fa-solid fa-eye-slash')
-            consetEye('fa-solid fa-eye-slash')
+        consetEye('fa-solid fa-eye-slash')
+        document.body.style.overflow = ''
+    }
+
+    const handleCloseSignup = () => {
+        closeForm()
     }
 
     const handleModal = (event) => {
         if(event.target.className === 'modal-sign') {
-            setSignup(false)
-            setMdl(false)
-            setType('password')
-            consetType('password')
-            setEye('fa-solid fa-eye-slash')
-            consetEye('fa-solid fa-eye-slash')
+            closeForm()
         }
     }
     
     document.addEventListener('keydown', (event) => {
         if(event.code == 'Escape') {
-            setSignup(false)
-            setMdl(false)
-            setType('password')
-            consetType('password')
-            setEye('fa-solid fa-eye-slash')
-            consetEye('fa-solid fa-eye-slash')
+            closeForm()
         }
     })
 

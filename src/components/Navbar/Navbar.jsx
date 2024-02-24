@@ -17,6 +17,11 @@ export default function Navbar() {
         document.body.style.overflow = 'hidden'
     }
 
+    const openForm = () => {
+        document.body.style.overflow = 'hidden'
+        setSignup(true)
+    }
+
   return (
     <div className="nav">
         <div className="container">
@@ -55,7 +60,7 @@ export default function Navbar() {
 
                 <div className="col-3 col-lg-4 sdn">
                     <div className="registerBtn">
-                        <button onClick={() => setSignup(true)}>Sign Up</button>
+                        <button onClick={openForm}>Sign Up</button>
                     </div>
                 </div>
 
