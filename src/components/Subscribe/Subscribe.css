@@ -175,18 +175,20 @@ section.subscribe .formCard form button:active {
 
     section.subscribe .formCard form input {
         width: 100%;
-        font-size: 14px;
+        font-size: 18px;
         line-height: 16px;  
+        padding: 20px;
     }
 
     section.subscribe .formCard form input::placeholder {
-        font-size: 14px;
+        font-size: 18px;
         line-height: 16px;
     }
 
     section.subscribe .formCard form button {
+        padding: 20px;
         width: 100%;
-        font-size: 14px;
+        font-size: 18px;
         line-height: 16px;
     }
 }
